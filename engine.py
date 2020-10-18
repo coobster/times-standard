@@ -1,9 +1,8 @@
 from requests import get
 from sqlite3 import connect
 from bs4 import BeautifulSoup as bs
-from time import sleep,time,localtime
-from threading import Thread
-from os.path import exists, isfile
+from time import time,localtime
+from os.path import exists
 
 DATABASE = 'newssource-humboldt'
 headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'}
